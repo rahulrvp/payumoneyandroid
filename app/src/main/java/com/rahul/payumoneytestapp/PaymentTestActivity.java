@@ -83,6 +83,10 @@ public class PaymentTestActivity extends ActionBarActivity {
             mInputParams.put(PARAM_TRANSACTION_ID, transactionId);
         }
 
+        if (TextUtils.isEmpty(mInputParams.get(PARAM_KEY))) {
+            mInputParams.put(PARAM_KEY, MERCHANT_KEY);
+        }
+
         String hashSequence = "key|txnid|amount|productinfo|firstname|email|udf1|udf2|udf3|udf4|udf5|udf6|udf7|udf8|udf9|udf10";
         String hashString = "";
         String[] hashKeys = hashSequence.split("\\|");
