@@ -19,9 +19,9 @@ public class MainActivity extends ActionBarActivity {
     public void onPayClicked(View view) {
         HashMap<String,String> params = new HashMap<>();
         params.put(PaymentTestActivity.PARAM_AMOUNT, String.valueOf(123));
-        params.put(PaymentTestActivity.PARAM_FIRST_NAME, "rahul");
-        params.put(PaymentTestActivity.PARAM_EMAIL, "rahul@bullfin.ch");
-        params.put(PaymentTestActivity.PARAM_PHONE, "8884080486");
+        params.put(PaymentTestActivity.PARAM_FIRST_NAME, "name");
+        params.put(PaymentTestActivity.PARAM_EMAIL, "name@example.com");
+        params.put(PaymentTestActivity.PARAM_PHONE, "888xxxx999");
         params.put(PaymentTestActivity.PARAM_PRODUCT_INFO, "sample_product");
         params.put(PaymentTestActivity.PARAM_SUCCESS_URL, "http://www.google.com");
         params.put(PaymentTestActivity.PARAM_FAILURE_URL, "http://www.google.com");
